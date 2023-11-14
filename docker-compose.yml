@@ -9,6 +9,7 @@ services:
       - "8081:80"
     depends_on:
       - db
+    command: ["php", "artisan", "serve", "--host=0.0.0.0", "--port=80"]
   db:
     image: mysql:8.0.24
     environment:
