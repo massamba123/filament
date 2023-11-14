@@ -24,5 +24,4 @@ RUN composer install --no-interaction --optimize-autoloader
 # Exposer le port 8000 (ou le port que votre application utilise)
 EXPOSE 8181
 
-# Commande pour exécuter l'application
 CMD php artisan serve --host=0.0.0.0 --port 8181
