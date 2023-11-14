@@ -12,7 +12,7 @@ services:
   db:
     image: mysql:8.0.24
     environment:
-      MYSQL_DATABASE: laravel
-      MYSQL_ROOT_PASSWORD: 7d331939cfcd0d5c
-      MYSQL_USER: root
-      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
