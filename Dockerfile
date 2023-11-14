@@ -25,5 +25,4 @@ RUN composer install --no-interaction --optimize-autoloader
 EXPOSE 8181
 
 # Commande pour exécuter l'application
-CMD php artisan artisan migrate
 CMD php artisan serve --host=0.0.0.0 --port 8181
