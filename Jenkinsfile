@@ -20,7 +20,7 @@ pipeline {
                 // Copy the environment file
                 sh 'cp .env.example .env'
                 
-                // Generate Laravel application key
+                // Key Generate Laravel application
                 sh 'php artisan key:generate'
                 
                 //sh "sed -i -e 's/DB_DATABASE=laravel/DB_DATABASE=laravel/g' .env"
