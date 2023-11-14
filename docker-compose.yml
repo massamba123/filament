@@ -7,12 +7,3 @@ services:
       dockerfile: DockerFile
     ports:
       - "8181:8181"
-    depends_on:
-      - db
-  db:
-    image: mysql:8.0.24
-    environment:
-      MYSQL_DATABASE: ${DB_DATABASE}
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-      MYSQL_USER: ${DB_USERNAME}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
